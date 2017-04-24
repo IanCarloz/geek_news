@@ -37,7 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #'project_news.home',
+    'rest_framework',
 ]
+
+# Template directory setting
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), 'templates'),
+)
+
+EMBEDLY_KEY = '<7d6470dfcd954000af4d0d8927b8f2d7>'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

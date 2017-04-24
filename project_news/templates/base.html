@@ -13,7 +13,7 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">{% block header %}{% endblock %}</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html"> view news </a></li>
+        <li><a href="{% url 'home:getnews' %}"> view news </a></li>
       </ul>
     </div>
   </nav>
